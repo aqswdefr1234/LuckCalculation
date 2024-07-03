@@ -4,7 +4,7 @@ using UnityEngine;
 public class AdMobForward : MonoBehaviour
 {
 #if UNITY_ANDROID
-    private string _adUnitId = "ca-app-pub-9996067309099965/5150343499";//½ÇÁ¦ ±¤°í id:ca-app-pub-9996067309099965/5150343499, Å×½ºÆ®¿ë : ca-app-pub-3940256099942544/1033173712
+    private string _adUnitId = "";//í…ŒìŠ¤íŠ¸ìš© : ca-app-pub-3940256099942544/1033173712
 #elif UNITY_IPHONE
   private string _adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
@@ -13,7 +13,7 @@ public class AdMobForward : MonoBehaviour
 
     private InterstitialAd _interstitialAd;
 
-    //¾Û ½ÇÇà½Ã ÇÑ¹ø¸¸ ÃÊ±âÈ­ ÇÏ¸éµÊ
+    //ì•± ì‹¤í–‰ì‹œ í•œë²ˆë§Œ ì´ˆê¸°í™” í•˜ë©´ë¨
     void Start()
     {
         // Initialize the Google Mobile Ads SDK.
@@ -21,7 +21,7 @@ public class AdMobForward : MonoBehaviour
         {
             // This callback is called once the MobileAds SDK is initialized.
         });
-        //¾À ½ÃÀÛµÇ¸é ¹Ì¸® ·Îµå. ¼ö¸íÀº 1½Ã°£
+        //ì”¬ ì‹œì‘ë˜ë©´ ë¯¸ë¦¬ ë¡œë“œ. ìˆ˜ëª…ì€ 1ì‹œê°„
         LoadInterstitialAd();
     }
 
